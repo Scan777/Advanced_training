@@ -67,7 +67,7 @@ class RealsenseCamera:
         #cv2.imshow("Colormap", depth_colormap)
         #cv2.imshow("depth img", depth_image)
 
-        return True, color_image, depth
+        return True, depth_image, color_image, depth
     
     def release(self):
         self.pipeline.stop()
